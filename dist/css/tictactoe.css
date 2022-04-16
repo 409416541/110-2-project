@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c1b1b;
+}
+
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+#container {
+  width: 400px;
+  margin: 40px auto;
+  background: #666;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+#board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#board li {
+  width: 90px;
+  height: 70px;
+  background: #333;
+  list-style: none;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+li {
+  border-radius: 10px;
+}
+
+.o {
+  color: green !important;
+}
+
+.x {
+  color: red !important;
+}
+
+#reset {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  width: 70%;
+  border: 0;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+}
+/*# sourceMappingURL=tictactoe.css.map */
