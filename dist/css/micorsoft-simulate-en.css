@@ -148,6 +148,12 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
+@media (max-height: 451px) {
+  header {
+    display: none;
+  }
+}
+
 .showcase-tw {
   background: url("../img/microsoft-tw/RWAn3f.png") no-repeat center center/cover;
 }
@@ -217,6 +223,7 @@ body {
   font-size: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  padding-top: 3rem;
 }
 
 a {
@@ -232,7 +239,6 @@ ul {
   width: 90%;
   max-width: 110rem;
   margin: auto;
-  padding-top: 3rem;
 }
 
 .btn {
@@ -292,7 +298,7 @@ ul {
 .menu-btn {
   cursor: pointer;
   position: absolute;
-  top: 2rem;
+  top: 4rem;
   right: 3rem;
   z-index: 2;
   display: none;
@@ -613,6 +619,15 @@ footer .footer-inner ul li {
   }
   footer .footer-inner ul li {
     padding: 0 0.2rem;
+  }
+}
+
+@media (max-height: 451px) {
+  body {
+    padding-top: 0;
+  }
+  .menu-btn {
+    top: 2.5rem;
   }
 }
 /*# sourceMappingURL=micorsoft-simulate-en.css.map */

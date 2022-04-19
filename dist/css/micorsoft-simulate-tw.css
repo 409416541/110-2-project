@@ -148,6 +148,12 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
+@media (max-height: 451px) {
+  header {
+    display: none;
+  }
+}
+
 .showcase-tw {
   background: url("../img/microsoft-tw/RWAn3f.png") no-repeat center center/cover;
 }
@@ -614,6 +620,18 @@ footer .footer-inner ul li {
   }
   footer .footer-inner ul li {
     padding: 0 0.2rem;
+  }
+}
+
+@media (max-height: 451px) {
+  body {
+    padding-top: 0;
+  }
+  .menu-btn {
+    top: 2.5rem;
+  }
+  .main-nav ul.main-ul {
+    top: 0;
   }
 }
 /*# sourceMappingURL=micorsoft-simulate-tw.css.map */

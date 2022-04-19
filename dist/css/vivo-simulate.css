@@ -148,6 +148,12 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
+@media (max-height: 451px) {
+  header {
+    display: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -379,6 +385,21 @@ footer .xxx i {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+}
+
+@media (max-height: 451px) {
+  body {
+    padding-top: 0;
+  }
+  .menu-btn {
+    top: 2.5rem;
+  }
+  .main-nav ul.main-ul {
+    top: 0;
+  }
+  .main-nav {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=vivo-simulate.css.map */

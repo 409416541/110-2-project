@@ -148,6 +148,12 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
+@media (max-height: 451px) {
+  header {
+    display: none;
+  }
+}
+
 .showcase-tw {
   background: url("../img/microsoft-tw/RWAn3f.png") no-repeat center center/cover;
 }
@@ -824,6 +830,22 @@ footer.links .more2 li ul li a.a {
   }
   footer {
     margin-top: 22%;
+  }
+}
+
+@media (max-height: 451px) {
+  body {
+    padding-top: 0;
+  }
+  .menu-btn {
+    top: 2rem;
+  }
+  .main-nav ul.main-ul {
+    top: 0;
+  }
+  .showcasen {
+    padding-top: 8px;
+    height: 3rem;
   }
 }
 /*# sourceMappingURL=apple-simulate.css.map */

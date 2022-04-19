@@ -13,6 +13,7 @@ body {
   font-size: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  padding-top: 3rem;
 }
 
 a {
@@ -28,7 +29,6 @@ ul {
   width: 90%;
   max-width: 110rem;
   margin: auto;
-  padding-top: 3rem;
 }
 
 .btn {
@@ -79,11 +79,12 @@ ul {
 .menu-btn{
   cursor: pointer;
   position: absolute;
-  top: 2rem;
+  top: 4rem;
   right: 3rem;
   z-index: 2;
   display: none;
 }
+
 /* SHOWCASE */
 
 .showcase-eg {
@@ -376,4 +377,14 @@ footer {
           }
       }
   }
+}
+
+@media(max-height: 451px) {
+    body {
+      padding-top: 0;
+    }
+
+    .menu-btn {
+        top: 2.5rem;
+    }
 }
