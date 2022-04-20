@@ -150,7 +150,7 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
-@media (max-height: 451px) {
+@media (max-height: 451px) and (max-width: 451px) {
   header {
     display: none;
   }

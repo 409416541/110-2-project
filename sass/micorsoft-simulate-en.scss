@@ -57,7 +57,7 @@ ul {
   ul {
       display: flex;
 
-      &.main-menu{
+      &.main-ul{
           flex: 1;
           margin-left: 2rem;
       }
@@ -256,7 +256,7 @@ footer {
   }
 
   .main-nav{
-      ul.main-menu{
+      ul.main-ul{
           display: block;
           position: absolute;
           top: 0;
@@ -379,12 +379,15 @@ footer {
   }
 }
 
-@media(max-height: 451px) {
-    body {
-      padding-top: 0;
-    }
 
-    .menu-btn {
-        top: 2.5rem;
+@media(max-height: 451px) {
+    @media(max-width: 451px) {
+        body {
+            padding-top: 0;
+        }
+      
+        .menu-btn {
+            top: 2.5rem;
+        }
     }
 }

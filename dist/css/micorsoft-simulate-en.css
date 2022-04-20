@@ -148,7 +148,7 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
-@media (max-height: 451px) {
+@media (max-height: 451px) and (max-width: 451px) {
   header {
     display: none;
   }
@@ -276,7 +276,7 @@ ul {
   display: flex;
 }
 
-.main-nav ul.main-menu {
+.main-nav ul.main-ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -500,7 +500,7 @@ footer .footer-inner ul li {
   .menu-btn:hover {
     opacity: 0.5;
   }
-  .main-nav ul.main-menu {
+  .main-nav ul.main-ul {
     display: block;
     position: absolute;
     top: 0;
@@ -517,16 +517,16 @@ footer .footer-inner ul li {
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
-  .main-nav ul.main-menu.show {
+  .main-nav ul.main-ul.show {
     -webkit-transform: translateX(-2rem);
             transform: translateX(-2rem);
   }
-  .main-nav ul.main-menu li {
+  .main-nav ul.main-ul li {
     padding: 0.8rem;
     border-bottom: #ccc solid 1px;
     font-size: 1.2rem;
   }
-  .main-nav ul.main-menu li:last-child {
+  .main-nav ul.main-ul li:last-child {
     border-bottom: 0;
   }
   .main-nav ul.right-menu {
@@ -622,7 +622,7 @@ footer .footer-inner ul li {
   }
 }
 
-@media (max-height: 451px) {
+@media (max-height: 451px) and (max-width: 451px) {
   body {
     padding-top: 0;
   }

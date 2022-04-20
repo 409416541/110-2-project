@@ -387,17 +387,19 @@ footer {
 }
 
 @media(max-height: 451px) {
-    body {
-      padding-top: 0;
-    }
-
-    .menu-btn {
-        top: 2.5rem;
-    }
-
-    .main-nav {
-        ul.main-ul {
-            top: 0;
+    @media(max-width: 451px) {
+        body {
+            padding-top: 0;
+        }
+      
+        .menu-btn {
+            top: 2.5rem;
+        }
+    
+        .main-nav {
+            ul.main-ul {
+                top: 0;
+            }
         }
     }
 }

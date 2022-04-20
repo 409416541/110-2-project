@@ -169,7 +169,9 @@ header {
 }
 
 @media(max-height: 451px) {
-  header {
-    display: none;
+  @media(max-width: 451px) {
+    header {
+      display: none;
+    }
   }
 }
