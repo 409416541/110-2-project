@@ -148,7 +148,7 @@ header nav.main-menu .list1 li:hover > ul {
   }
 }
 
-@media (max-height: 451px) and (max-width: 451px) {
+@media (max-width: 451px) and (min-width: 449px) and (max-height: 451px) and (max-height: 451px) {
   header {
     display: none;
   }
@@ -623,7 +623,7 @@ footer .footer-inner ul li {
   }
 }
 
-@media (max-height: 451px) and (max-width: 451px) {
+@media (max-width: 451px) and (min-width: 449px) and (max-height: 451px) and (max-height: 451px) {
   body {
     padding-top: 0;
   }

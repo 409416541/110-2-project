@@ -168,10 +168,14 @@ header {
   }
 }
 
-@media(max-height: 451px) {
-  @media(max-width: 451px) {
-    header {
-      display: none;
-    }
+@media(max-width: 451px) {
+  @media(min-width: 449px) {
+      @media(max-height: 451px) {
+          @media(max-height: 451px) {
+            header {
+              display: none;
+            }
+          }
+      }
   }
 }

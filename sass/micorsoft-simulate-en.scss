@@ -379,15 +379,18 @@ footer {
   }
 }
 
-
-@media(max-height: 451px) {
-    @media(max-width: 451px) {
-        body {
-            padding-top: 0;
-        }
-      
-        .menu-btn {
-            top: 2.5rem;
+@media(max-width: 451px) {
+    @media(min-width: 449px) {
+        @media(max-height: 451px) {
+            @media(max-height: 451px) {
+                body {
+                    padding-top: 0;
+                }
+              
+                .menu-btn {
+                    top: 2.5rem;
+                }
+            }
         }
     }
 }
