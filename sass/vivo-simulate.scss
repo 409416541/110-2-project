@@ -223,7 +223,7 @@ footer {
 @media(max-width: 451px) {
     @media(min-width: 449px) {
         @media(max-height: 451px) {
-            @media(max-height: 451px) {
+            @media(min-height: 449px) {
                 body {
                     padding-top: 0;
                 }
