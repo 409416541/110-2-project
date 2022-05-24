@@ -1,6 +1,10 @@
 @import 'config';
 @import 'picture';
 
+@mixin ahoverrgb($color1, $color2, $color3){
+    border-bottom: 2px solid rgb($color1, $color2, $color3);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +17,7 @@ body {
   font-size: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  padding-top: 3rem;
+  padding-top: 8rem;
 }
 
 a {
@@ -44,36 +48,41 @@ ul {
 /* NAV */
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6rem;
-  font-size: 1.2rem;
+    width: 100%;
+    padding: 0;
 
-  .logo {
-      width: 11rem;
-  }
+    .main-ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        font-size: 1.2rem;
+        position: fixed;
+        top: 3rem;
+        z-index: 1400;
+        background-color: rgba(71, 68, 68, 0.5);
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        padding: 0 14%;
+        
+        li {
+            .logo {
+                font-size: 1.2rem;
+            }
 
-  ul {
-      display: flex;
+            a {
+                padding-bottom: 2px;
+                font-size: 1rem;
+                font-weight: 200;
+                color: rgb(255, 255, 255);
+            }
 
-      &.main-ul{
-          flex: 1;
-          margin-left: 2rem;
-      }
-
-      li {
-          padding: 0 0.7rem;//1rem=10px
-
-          a {
-              padding-bottom: 2px;
-          }
-
-          a:hover {
-              border-bottom: 2px solid #262626;
-          }
-      }
-  }
+            a:hover {
+                @include ahoverrgb(255, 255, 255);
+            }
+        }
+    }
 }
 
 .menu-btn{
@@ -127,6 +136,8 @@ ul {
 /* SHOWCASE */
 
 .showcase-eg {
+    border: 8px rgba(129, 198, 215, 0.75) solid;
+    border-radius: 5px;
     width: 100%;
     height: 35rem;
     display: flex;
@@ -144,7 +155,10 @@ ul {
 
 /* XBox */
 
-.xbox {   
+.xbox {
+  border: 8px rgba(129, 198, 215, 0.75) solid;
+  border-radius: 5px;
+    
   width: 100%;
   height: 350px;
   margin-bottom: 2rem;
@@ -167,6 +181,8 @@ ul {
 /* Carbon */
 
 .carbon {
+  border: 8px rgba(129, 198, 215, 0.75) solid;
+  border-radius: 5px;
   width: 100%;
   height: 350px;
   margin-bottom: 2rem;
@@ -201,48 +217,26 @@ ul {
    }
 
    a {
-      margin-right: 1rem;
+      margin-left: 1rem;
    }
 }
 
-/* Links */
-
-.links {
-  background-color: #f2f2f2;
-  color: #616161;
-  font-size: 1rem;
-  padding: 3.5rem 0;
-  width: 98%;
-  max-width: 110rem;
-  margin: auto;
-  padding: 2rem;
-  height: auto;
-
-  .links-inner {
-      max-width: 110rem;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: 1rem;
-      align-items: flex-start;
-      justify-content: center;
-      
-      li {
-        line-height: 2.8;
-      }
-  }
-}
-
 footer {
-  background-color: #f2f2f2;
+  background-color: #b6da78;
+  border-radius: 6px;
   width: 98%;
   max-width: 110rem;
   margin: auto;
   padding: 2rem;
   height: auto;
+
+  h3 {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
 
   .footer-inner {
+      margin: 1rem;
       display: flex;
       ul {
           display: flex;
@@ -264,22 +258,23 @@ footer {
   }
 
   .main-nav{
-    ul.main-ul{
+    ul.main-ul {
         display: block;
         position: absolute;
-        top: 0;
+        top: 3rem;
         left: 0;
         width: 50%;
-        height: 100vh;
-        background: #f2f2f2;
+        height: 35rem;
+        background-color: rgba(71, 68, 68, 0.8);
         opacity: 0.9;
-        padding: 2rem;
+        padding: 0 2rem;
         transform: translateX(-50rem);
         transition: transform 0.5s ease-in-out;
-        
+
         &.show{
             transform: translateX(-2rem);
         }
+
         li{
             padding: 0.8rem;
             border-bottom: #ccc solid 1px;
@@ -289,10 +284,13 @@ footer {
             border-bottom: 0;
         }
     }
-    ul.right-menu{
-        margin-right: 3.5rem;
+
+    nav.main-menu {
+        height: 2rem;
+        top: 0;
     }
   }
+
   .btn {
       font-size: 1rem;
       padding: 0.6rem 0.9rem;
@@ -325,15 +323,11 @@ footer {
           }
       }
   }
+
   .carbon{
       padding: 3rem 0;
   }
-  .links{
-      .links-inner{
-          display: grid;
-          grid-template-columns:repeat(2,1fr) ;
-      }
-  }
+  
   footer{
       .footer-inner{
           display: grid;
@@ -377,12 +371,7 @@ footer {
   .carbon{
       padding: 2rem 0;
   }
-  .links{
-      .links-inner{
-          display: grid;
-          grid-template-columns:repeat(1,1fr) ;
-      }
-  }
+  
   footer{
       .footer-inner{
           display: grid;
@@ -409,6 +398,12 @@ footer {
               
                 .menu-btn {
                     top: 2.5rem;
+                }
+
+                .main-nav {
+                    ul.main-ul {
+                        top: 0;
+                    }
                 }
             }
         }
