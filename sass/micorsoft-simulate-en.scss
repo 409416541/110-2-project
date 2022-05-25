@@ -231,12 +231,22 @@ footer {
   height: auto;
 
   h3 {
-    padding-left: 1rem;
+    margin: 0 90% 0 1%;
+    padding: 0.5rem;
+    border: 3px rgb(48, 237, 158) solid;
+    border-radius: 10px;
     font-size: 1.5rem;
+    background-color: #3c88b7c9;
   }
 
   .footer-inner {
       margin: 1rem;
+      border: 3px rgb(48, 237, 158) solid;
+      border-radius: 10px;
+      padding: 0.5rem;
+      background-color: #3c88b7c9;
+      font-size: 0.6rem;
+      font-weight: 500;
       display: flex;
       ul {
           display: flex;
